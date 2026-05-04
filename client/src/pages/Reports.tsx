@@ -14,7 +14,7 @@ export default function Reports() {
   const [month, setMonth] = useState(new Date().getMonth() + 1);
   const [incomeStats, setIncomeStats] = useState<CategoryStats[]>([]);
   const [expenseStats, setExpenseStats] = useState<CategoryStats[]>([]);
-  const [monthlyStats, setMonthlyStats] = useState<MonthlyStats>({ month: '', income: 0, expense: 0, balance: 0 });
+  const [monthlyStats, setMonthlyStats] = useState<MonthlyStats>({ month: '', monthLabel: '', income: 0, expense: 0, balance: 0 });
   const [last6Months, setLast6Months] = useState<MonthlyStats[]>([]);
 
   useEffect(() => {
