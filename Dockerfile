@@ -12,8 +12,10 @@ WORKDIR /app/server
 COPY server/package*.json ./
 COPY server/tsconfig.json ./
 COPY server/src ./src
-RUN npm ci
-RUN npm run build
+# 后端构建也可能需要编译 native 模块
+RUN apk add --no-cache python3 make g++ && \
+    npm ci && \
+    npm run build
 
 # 运行阶段
 FROM node:20-alpine
