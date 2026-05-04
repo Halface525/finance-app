@@ -1,6 +1,6 @@
 import express from 'express';
-import { query, get } from '../database/db';
-import { MonthlyStats, CategoryStats } from '../types';
+import { query, get } from '../database/db.js';
+import { MonthlyStats, CategoryStats } from '../types/index.js';
 
 const router = express.Router();
 

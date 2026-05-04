@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors';
-import { initDatabase } from './database/db';
-import categoriesRouter from './routes/categories';
-import transactionsRouter from './routes/transactions';
-import statsRouter from './routes/stats';
+import { initDatabase } from './database/db.js';
+import categoriesRouter from './routes/categories.js';
+import transactionsRouter from './routes/transactions.js';
+import statsRouter from './routes/stats.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;

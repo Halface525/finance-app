@@ -1,5 +1,5 @@
 import sqlite3 from 'sqlite3';
-import { Category, Transaction } from '../types';
+import { Category, Transaction } from '../types/index.js';
 
 const db = new sqlite3.Database('./finance.db');
 

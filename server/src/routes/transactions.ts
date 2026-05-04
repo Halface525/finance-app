@@ -1,6 +1,6 @@
 import express from 'express';
-import { query, run, get } from '../database/db';
-import { Transaction } from '../types';
+import { query, run, get } from '../database/db.js';
+import { Transaction } from '../types/index.js';
 
 const router = express.Router();
 
