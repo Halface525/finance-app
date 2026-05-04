@@ -17,6 +17,7 @@ export interface Transaction {
 
 export interface MonthlyStats {
   month: string;
+  monthLabel: string;
   income: number;
   expense: number;
   balance: number;

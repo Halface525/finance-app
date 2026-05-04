@@ -22,6 +22,7 @@ router.get('/monthly/:year/:month', async (req, res) => {
 
     const stats: MonthlyStats = {
       month: `${year}-${monthStr}`,
+      monthLabel: `${parseInt(month)}月`,
       income,
       expense,
       balance: income - expense,
